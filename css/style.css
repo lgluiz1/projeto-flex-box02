@@ -1,0 +1,613 @@
+/* config da pagina geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importação fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+/* Variaves cores */
+
+:root{
+
+    /* Variaves cores primarias */
+
+    --cor-magenta:hsl(300, 43%, 22%);
+    --cor-pink:hsl(333, 80%, 67%);
+    --cor-amarela: #FFD700;
+
+    /* Variaves cores neutras */
+
+    --cor-dark-grayish-magenta: hsl(303, 10%, 53%);
+    --cor-light-grayish-magenta: hsl(300, 24%, 96%);
+    --cor-white: hsl(0, 0%, 100%);
+}
+
+/* configuração fundo pagina */
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.svg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* cabeçalho da pagina*/
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    /*align-content: center;*/
+    justify-content: space-around;
+    padding-top: 100px;
+    width: 100%;
+}
+
+/*configuração da div titutlo da pagina */
+
+header #titulo{
+    
+}
+
+/*Titulo da pagina*/
+
+.titulo{
+    font-weight: 700;
+    width: 375px;
+    font-size: 40px;
+    color: var(--cor-magenta);
+}
+
+/*paragrafo do titutlo*/
+
+.infor{
+    font-weight: 400;
+    width: 375px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: var(--cor-dark-grayish-magenta);
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+/*barra direita do cabeçalho*/
+
+#skil-coment{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*configurações das barras de estrelas*/
+
+.coment{
+   max-width: 550px;
+    height: 80px;
+    border-radius: 10px;
+    background: var(--cor-light-grayish-magenta);
+    display: flex;
+    align-items: center;
+}
+
+/* Estrelhas config*/
+
+.estrelas{
+    width: 300px;
+    padding-left: 50px;
+}
+
+/* Estrelhas config incones */
+
+.fa-star{
+    color: var(--cor-amarela);
+    font-size: 30px;
+}
+
+/* posição das avaliações*/
+
+.c1{
+    margin-left: -160px;
+}
+.c2{
+    margin-left: -80px;
+}
+.c3{
+    margin-left: -10px;
+}
+.c3 a{
+   margin-left: -30px;
+}
+
+/*corpo da pagina config*/
+
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 150px;
+    gap: 150px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+/* caixas de comentarios 3x */
+
+.comentarios{
+    min-width: 375px;
+    height: 275px;
+    border-radius: 10px;
+    background: var(--cor-magenta);
+    box-shadow: 5px 10px 10px #888888;
+}
+
+/* posicionamento dos comentarios 3x */
+
+.co1{
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.co2{
+    margin-top: -75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s; 
+}
+.co3 {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+/* conteudo do comentarios*/
+
+.coment-conteudo{
+    width: 320px;
+    display: flex;
+    gap: 20px;
+}
+
+/* incones do comentarios*/
+
+.fa-brands{
+    font-size: 60px;
+    color: var(--cor-white);
+}
+
+/* titulos do comentarios*/
+
+.titulocoment .titulocomentarios{
+    color: var(--cor-white);    
+    font-size: 25px;
+}
+
+/* sub-titulo do comentarios*/
+
+.titulocoment .subcoment{
+    color: var(--cor-dark-grayish-magenta);
+    font-size: 20px; 
+    margin-bottom: 20px;   
+}
+
+.titulocoment p{
+    color: var(--cor-white);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* footer cong*/
+
+footer{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 1000;
+}
+
+/*config titulo footer*/
+
+.titulo-footer{
+    color: var(--cor-magenta);
+    font-size: 45px;
+    padding-top: 15px;
+    align-self: center;
+}
+
+/*config paragrafo footer*/
+
+.footecoment{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: var(--cor-dark-grayish-magenta);    
+    align-self: center;
+}
+
+/* ul confg */
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 50px;
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+} 
+
+
+/* li confg */
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    color: var(--cor-magenta);
+    gap: 10px;
+}
+.fa-github, .fa-linkedin, .fa-square-instagram, .fa-square-whatsapp{
+    color: var(--cor-magenta);
+}
+
+/* li a confg */
+
+li a {
+    text-decoration: none;
+    align-self: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--cor-magenta);
+    transition: all 0.5s;
+}
+
+/* hover social  */
+
+li a:hover {
+    color: var(--cor-dark-grayish-magenta);    
+}
+
+/* creditos  */
+
+.attribution {
+    text-align: center;
+    color: var(--cor-dark-grayish-magenta);
+    background-color: var(--cor-magenta);
+    width: 100%; 
+    padding-top: 30px; 
+    padding-bottom: 5px;  
+}
+
+/*config rodapé*/
+
+.attribution a {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--cor-white);
+    transition: all 0.5s;  
+}
+
+/*config hover link do footer*/
+
+.attribution a:hover{
+    color: var(--cor-dark-grayish-magenta);
+}
+
+/* Estilos para telas menores que 1437 pixels */
+
+@media (min-width:1184px) and (max-width: 1437px) {
+
+    /*corpo da pagina config*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content:space-around;
+    padding-top: 150px;
+    gap: 30px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+  }
+
+  /* Estilos para telas menores que 1200 pixels */
+
+  @media (max-width: 1184px) {
+
+    /*corpo da pagina config*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-top: 150px;
+    gap: 0px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+  }
+
+  /* Estilos para telas menores que 1124 pixels */
+
+  @media (max-width: 1120px) {
+
+    /*estrlas topo confg*/
+
+    .estrelas{
+        width: 300px;
+        padding-left: 50px;
+    }
+    .fa-star{
+        color: var(--cor-amarela);
+        font-size: 30px;
+    }
+    .c1{
+        margin-left: 0px;
+    }
+    .c2{
+        margin-left: 0px;
+    }
+    .c3{
+        margin-left: -0px;
+    }
+    .c3 a{
+       margin-left: -30px;
+    }
+    
+    /*corpo da pagina config*/
+    
+    main{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            z-index: 1000;
+    }
+
+/*conf dos quadrados do corpo*/
+
+    .comentarios{
+            min-width: 340px;
+            height: 275px;
+            border-radius: 10px;
+            background: var(--cor-magenta);
+            box-shadow: 5px 10px 10px #888888;
+    }
+
+    /*conf dos quadrados do corpo separados*/
+
+    .co1{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+    }
+    .co2{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s; 
+    }
+    .co3 {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+    }    
+
+  }
+    /* Estilos para telas menores que 691 pixels */
+
+    @media (max-width: 691px) {
+
+/* tirando svg grande*/
+
+.svg1 {
+    display: none;
+}
+
+/* Add novo svg topo mobile*/
+
+.svg3 {
+    background-image: url(/img/bg-pattern-top-mobile.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* centralizar titulo */
+
+.titulo{
+    text-align: center;
+ }
+
+/* avaliaões topo*/
+
+.coment{
+    width: 375px;
+     height: 100px;
+     border-radius: 10px;
+     background: var(--cor-light-grayish-magenta);
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     gap: 10px;
+ }
+
+ /* corpo*/
+
+ main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+/* caixas do corpo */
+
+.comentarios{
+    min-width: 340px;
+    height: 275px;
+    border-radius: 10px;
+    background: var(--cor-magenta);
+    box-shadow: 5px 10px 10px #888888;
+}
+
+/* caixas do corpo separadas */
+
+.co1{
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: all 1s;
+}
+.co2{
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: all 1s; 
+}
+.co3 {
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: all 1s;
+}    
+ /* centralizar titulo */
+ .titulo-footer{
+    font-size: 30px;
+ }
+ 
+/* centralizar footer */
+
+ .footecoment{
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+ }
+
+ /* tamanho header */
+
+ header #titulo{
+    width: 350px;
+ }
+
+/* tamanho subtitulo pagina */
+
+ .infor{
+    text-align: center;
+    font-size: 15px;
+    width: 300px;
+    padding-left: 15%;
+ }
+    }
+
+/* Estilos para telas menores que 415 pixels */
+
+@media (max-width: 415px) {
+
+/* comentarios com estrelhasd tamanho menor */
+    .coment{
+        width: 340px;
+         height: 100px;
+         border-radius: 10px;
+         background: var(--cor-light-grayish-magenta);
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         justify-content: center;
+         gap: 10px;
+     }
+
+     
+
+     /* centralizar titulo */
+
+     .titulo{
+        text-align: center;
+     }
+
+     /* centralizar footer */
+
+     .attribution{
+        font-size: 10px;
+     }
+
+     /* centralizar titulo */
+     .titulo-footer{
+        font-size: 30px;
+     }
+     
+    /* centralizar footer */
+
+     .footecoment{
+        font-size: 15px;
+        width: 300px;
+        text-align: center;
+     }
+
+     /* tamanho header */
+
+     header #titulo{
+        width: 350px;
+     }
+
+    /* tamanho subtitulo pagina */
+
+     .infor{
+        text-align: center;
+        font-size: 15px;
+        width: 300px;
+        padding-left: 15%;
+     }
+}
